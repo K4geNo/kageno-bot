@@ -61,12 +61,11 @@ export class ExtendedClient extends Client {
         this.application?.commands
             .set(commands)
             .then(() => {
-                console.log('✅ Slash Commands (/) defined'.green)
+                console.log('✅ Slash Commands (/) defined')
             })
             .catch((error) => {
                 console.log(
-                    `❌ An error occurred while trying to set the Slash Commands (/): \n${error}`
-                        .red,
+                    `❌ An error occurred while trying to set the Slash Commands (/): \n${error}`,
                 )
             })
     }
@@ -132,8 +131,7 @@ export class ExtendedClient extends Client {
                         }
                     } catch (error) {
                         console.log(
-                            `An error occurred on event: ${name} \n${error}`
-                                .red,
+                            `An error occurred on event: ${name} \n${error}`,
                         )
                     }
                 })

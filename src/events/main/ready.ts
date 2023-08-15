@@ -7,10 +7,10 @@ export default new Event({
     async run() {
         const { commands, buttons, selects, modals } = client
 
-        console.log('✅ Bot is online!'.green)
-        console.log(`🔍 Commands loaded: ${commands.size}`.cyan)
-        console.log(`🔍 Buttons loaded: ${buttons.size}`.cyan)
-        console.log(`🔍 Select menus loaded: ${selects.size}`.cyan)
-        console.log(`🔍 Modals loaded: ${modals.size}`.cyan)
+        console.log('✅ Bot is online!')
+        console.log(`🔍 Commands loaded: ${commands.size}`)
+        console.log(`🔍 Buttons loaded: ${buttons.size}`)
+        console.log(`🔍 Select menus loaded: ${selects.size}`)
+        console.log(`🔍 Modals loaded: ${modals.size}`)
     },
 })
