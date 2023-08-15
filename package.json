@@ -1,0 +1,25 @@
+{
+  "name": "kageno-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "lint": "eslint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.47.0",
+    "eslint-config-k4geno": "^1.0.2",
+    "tsx": "^3.12.7",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "discord.js": "^14.12.1",
+    "dotenv": "^16.3.1",
+    "moment": "^2.29.4"
+  }
+}

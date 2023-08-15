@@ -1,0 +1,5 @@
+{
+    "extends": [
+       "eslint-config-k4geno/node"
+    ]
+}
