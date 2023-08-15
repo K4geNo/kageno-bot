@@ -18,8 +18,8 @@ import {
 
 import { EventType } from '../types/Event'
 import dotenv from 'dotenv'
-import fs from 'fs'
-import path from 'path'
+import fs from 'node:fs'
+import path from 'node:path'
 
 dotenv.config()
 
