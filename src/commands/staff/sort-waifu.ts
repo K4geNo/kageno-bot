@@ -8,6 +8,7 @@ import {
 
 import { Command } from '../../types/Command'
 import { waifus } from '../../data/waifus'
+import { shuffle } from '../../utils/shuffle'
 
 export default new Command({
     name: 'sort-waifu',
@@ -40,15 +41,6 @@ export default new Command({
         const subcommand = options.getSubcommand(true)
 
         if (subcommand === 'group') {
-            function shuffle(array: Array<string>) {
-                for (let i = array.length - 1; i > 0; i--) {
-                    const j = Math.floor(Math.random() * (i + 1))
-                    const temp = array[i]
-                    array[i] = array[j]
-                    array[j] = temp
-                }
-            }
-
             function sortGroup(array: Array<string>, maxGroups: number) {
                 const groups = []
                 const groupSize = 4

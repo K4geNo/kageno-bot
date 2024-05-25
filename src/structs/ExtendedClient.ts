@@ -17,11 +17,11 @@ import {
 } from '../types/Command'
 
 import { EventType } from '../types/Event'
-import dotenv from 'dotenv'
+// import dotenv from 'dotenv'
 import fs from 'node:fs'
 import path from 'node:path'
 
-dotenv.config()
+// dotenv.config()
 
 const fileCondition = (fileName: string) =>
     fileName.endsWith('.ts') || fileName.endsWith('.js')
